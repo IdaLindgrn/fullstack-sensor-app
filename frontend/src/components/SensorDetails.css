@@ -1,29 +1,52 @@
-/* Sensor Details Styles */
 .back-link {
-  color: #007bff;
+  display: inline-block;
+  color: #3498db;
   text-decoration: none;
   margin-bottom: 1rem;
-  display: inline-block;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
 }
 
 .sensor-header {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
 }
 
-.card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  margin-bottom: 1.5rem;
+.sensor-header .model {
+  color: #7f8c8d;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
-.empty-state {
-  text-align: center;
-  padding: 3rem;
-  color: #6c757d;
+.sensor-header .description {
+  color: #95a5a6;
+  margin-top: 0.5rem;
+}
+
+.date-filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.date-filters input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.date-filters button {
+  flex: 0;
+}
+
+.chart-card {
+  margin-top: 2rem;
+}
+
+.chart-card h3 {
+  margin-bottom: 1.5rem;
 }

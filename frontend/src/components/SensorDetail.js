@@ -153,7 +153,7 @@ function SensorDetail({ token }) {
               <input
                 type="number"
                 step="0.1"
-                placeholder="Temperature"
+                placeholder="Temperature (°C)"
                 value={newReading.temperature}
                 onChange={(e) => setNewReading({...newReading, temperature: e.target.value})}
                 required
@@ -161,7 +161,7 @@ function SensorDetail({ token }) {
               <input
                 type="number"
                 step="0.1"
-                placeholder="Humidity"
+                placeholder="Humidity (%)"
                 value={newReading.humidity}
                 onChange={(e) => setNewReading({...newReading, humidity: e.target.value})}
                 required
